@@ -1,0 +1,39 @@
+			Welcome To Angular Module 12
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+
+
+How to conduct Our Module
+  - our session is from monday to friday 
+  - daily doubt solving in session as well 
+	before 10 min time of session or after session for 10 min daily 
+  - duration of course 40 hrs to 45 hrs 
+  - daily time avg 1.15hr it may be change 1.30hr or 1hr depernds on topic 
+  - daily recording is aviable but that recodring is only view there is no any download option 
+  every recording u have register 
+  - recording is valid on cloud for 4-5 days
+  - daily join sharp on 11am 
+  - daily practice is important 
+  - in regular batch no any project 
+  - all interview question is given 
+  - all code is given & soft copy notes is also avaibale except images 
+  - OOPS Concept is known 
+  - basic of html & css is required 
+  - u hve know typescript 
+  
+
+
+
+
