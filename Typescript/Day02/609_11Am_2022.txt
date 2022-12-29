@@ -1,0 +1,11 @@
+Last Lecture
+1 Introduction
+2 Software setup
+
+Today Lecture
+1 diff. between Angular Js & Angular 2+ (2/4/5/6/7/8/9/10/11)
+2 what is angular?
+3 why angular?
+
+
+
