@@ -1,0 +1,42 @@
+Last Lecture
+1 diff. between Angular Js & Angular 2+ (2/4/5/6/7/8/9/10/11)
+	- js based / typescript
+	- mvc / mvw 
+	- memory is not efficient / memory is efficient
+	- decrease a performance / increase a performance
+	- not support mobile community / it support mobile community
+2 what is angular?
+	- it is front technolgy
+	- it is freamwrok
+	- angular , react js ,embber js, vue js ,jsp 
+3 why angular?
+	- it is freamwrok
+	- easy to build application for web
+	- it has module,template,service, DI, component, end to end tooling ,service 
+	- it is mvw 
+	- it support progressive web app 
+	- it is universal freamwrok
+	- one freamwrok to all
+	- cross platform support 
+	- code splitting 
+	- quick ui view 
+	- it creates SPA
+	- angular cli 
+	- speed & performance 
+4 SPA 
+	- 1 head & 1 body 
+	- spa env provide
+		no page reload & no extra wait time 
+	- gmail,sbi mutual funds,google maps,ganna.com,walmart 
+	
+	
+
+Today Lecture
+1 What is Typescript
+2 Advantages And Disadvantage of typescript
+3 vscode overview
+	- it is code editior 
+4 simple program in typescript
+
+
+
