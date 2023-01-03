@@ -1,0 +1,45 @@
+Last Lecture
+1 back tick operator
+	console.log(`....`)
+	var a1,a3;
+	
+2 variable
+3 data type
+	number(int,float ,double,short ,long ),string(''/""/``),boolean(true/false),
+	any(number,string,boolean),null,undefined,void(neutral data type )
+	
+	var a:number=10;
+	console.log('hdfg'+a)
+	console.log("hdfg"+a);
+	console.log(`VAlue of a ${a} `)
+	var str!:string;
+	console.log(str);
+	var a;
+	var temp=2.5;
+	var a:any;
+	a=2.5;
+	...
+	a='sumit';
+	...
+	a=true;
+	
+4 type assertion
+	
+	any,object,unknown
+	1 angle bracket
+		var temp=(<string> a)
+	2 as syntax
+		var temp=(a as string)
+	
+	
+
+Today Lecture
+1 Operators
+2 control statement
+3 loop statement
+4 difference between var vs let vs const 
+5 Basic user defined functions types 
+
+
+
+
