@@ -1,0 +1,82 @@
+Last Lecture
+1 Operators
+	Airthmathic,logical,bitwise,ternary,relation,conditional,unary
+2 control statement
+	if,if-else,break,continue,switch 
+		if(count<4){
+		...
+		}else{
+		....
+		}
+		var choice=2;
+		switch(choice){
+			case1: ....
+					break;
+			...
+			default : ...
+					break;
+		}
+3 loop statement
+	while,do-while,for,foreach(pending) 
+	while(count!=0){
+		....
+		count--;
+	}
+	
+	do{
+		...
+		count--;
+	}while(count!=0);
+	
+	for(let i=0;i<4;i++){
+	....
+	}
+	
+
+4 difference between var vs let vs const 
+
+	var => it is global scope 
+			it is not memory optimize
+	let => it is within nearest block
+	const => it is global as well as local 
+
+5 Basic user defined functions types 
+	1 Functions without parameter & without return type
+		
+			function add1(){
+				....
+			}
+			
+			add1();
+2 Functions with parameter & without return type
+		function add2(a:number,b:number){
+				console.log(a+b)
+		}
+		
+		add2(5,3);
+3 Functions without parameter & with return type
+	
+		function add3():number{
+			return (5+5)
+		}
+		let res=add3();
+		console.log(res);
+4 Functions with parameter & with return type
+		function add4(a:number,b:number):number{
+				return (a+b);
+		}
+		
+		let temp=add4(8,2);
+		console.log(temp)
+
+Today Lecture
+1 Anonymous Functions
+2 Fat arrow functions
+3 FAR => Function Activation Record
+4 optional parameter functions
+5 default parameter functions
+
+
+
+
+
