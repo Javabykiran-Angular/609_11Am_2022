@@ -1,0 +1,63 @@
+Last Lecture
+1 Anonymous Functions
+	let temp1=function (){
+		console.log("ghhhh")
+	}
+	temp1();
+	
+	let temp2=function (a:number,b:number):number{
+		return (a+b);
+	}
+		
+		let res=temp2(5,5)
+		...
+	
+2 Fat arrow functions
+	
+	 let temp3= ()=>{
+		console.log("....")
+	  }
+	  
+	  temp3();
+	  
+		let temp4= (a:number,b:number):number =>{
+			return (a+b)
+		}
+		
+			let res=temp4(2,3);
+	
+3 FAR => Function Activation Record
+4 optional parameter functions
+		function add1(a?:number,b?:number){
+		....
+		}
+		
+		add1();
+		
+		
+		
+5 default parameter functions
+
+		function add1(a:number=9,b?:number){
+		....
+		}
+	
+		add1(2,10)
+		
+		function add1(a?:number,b?:number){
+		....
+		}
+		add1();
+		
+
+Today Lecture
+1 Array Basics
+2 join method
+3 foreach loop
+4 rest parameter functions
+
+
+
+
+
+
