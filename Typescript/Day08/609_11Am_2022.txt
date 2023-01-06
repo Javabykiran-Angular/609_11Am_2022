@@ -1,0 +1,43 @@
+Last Lecture
+1 Array Basics
+	let a:number[]=[2,3,4,5];
+	let a:string[]=[];
+	let a:any[]=[];
+	let a=[2.3,7,8,9]
+	let a=[3,'sumit',78];
+	
+	for(let i=0;i<a.length;i++){
+	.....
+	}
+	
+	console.log(a);
+	
+2 join method
+	a.join(" # ");
+	a.join();
+3 foreach loop
+	
+	a.forEach((myvalue,i)=>{
+			....
+	})
+	
+4 rest parameter functions
+
+	function display(str:string,...item:number[]){
+		console.log(item)
+	}
+	
+	display('sumit',45,66,85);	
+
+
+Today Lecture
+1 Push & pop
+2 Splice
+3 slice
+4 json object
+
+
+
+
+
+
