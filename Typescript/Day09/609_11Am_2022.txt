@@ -1,0 +1,52 @@
+Last Lecture
+1 Push & pop
+	- LIFO 
+	let a:number[]=[];
+	
+	a.push(45);
+	console.log(a);
+	a.push(78,90,85);
+	console.log(a);
+	let res=a.pop()
+	console.log(a);
+	console.log(res);
+	
+	
+2 Splice
+	- particular index u can add/remove/replace data
+	
+	let a:number[]=[4,7,8,6,10];
+	
+	a.splice(2,0,100);
+	a.splice(2,0,99,88);
+	a.splice(2,1);
+	a.splice(2,2);
+	a.splice(3,1,800);
+	a.splice(4,1,900,1000);
+	
+	
+3 slice
+	- It copy a section of data from array 
+		let temp=a.slice(1,8)
+		let temp=a.slice(4);
+		let temp=a.slice();
+		
+4 json object
+		- java script object notation 
+		let jsonObj={
+			id:9,
+			"fname":"sumit",
+			lname: ""
+		}
+
+Today Lecture
+1 Json Object continue 
+2 dot operator
+3 square operator
+4 Array of Object/multidimensional array
+
+
+
+
+
+
