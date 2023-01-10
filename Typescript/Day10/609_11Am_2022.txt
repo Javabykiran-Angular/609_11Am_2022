@@ -1,0 +1,133 @@
+Last Lecture
+1 Json Object continue 
+	let json={
+		id:9,
+		"fname":"Sumit",
+		lname:"raokhande"
+	}
+	
+	console.log(`
+		id ${json.id}
+		fname ${json.fname}
+	`)
+	
+	console.log(`
+		id ${json["id"]}
+		fname ${json['fname']}
+	`)
+2 dot operator
+3 square operator
+4 Array of Object/multidimensional array
+	
+	let arrobj=[
+		{
+			id:9,
+			fname:"Sumit",
+			lname:"Raokhande",
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["Jan","Feb","Dec"],
+			result:[
+				{
+					subj:"M1",
+					marks:45
+				},
+				{
+					subj:"M2",
+					marks:45
+				},
+				{
+					subj:"M3",
+					marks:45
+				}
+			]
+		},
+		{
+			id:9,
+			fname:"Sumit",
+			lname:"Raokhande",
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["Jan","Feb","Dec"],
+			result:[
+				{
+					subj:"M1",
+					marks:45
+				},
+				{
+					subj:"M2",
+					marks:45
+				},
+				{
+					subj:"M3",
+					marks:45
+				}
+			]
+		},
+		{
+			id:9,
+			fname:"Sumit",
+			lname:"Raokhande",
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["Jan","Feb","Dec"],
+			result:[
+				{
+					subj:"M1",
+					marks:45
+				},
+				{
+					subj:"M2",
+					marks:45
+				},
+				{
+					subj:"M3",
+					marks:45
+				}
+			]
+		}
+	]
+	
+	for(let i=0;i<arrobj.length;i++){
+		
+		console.log(`
+			id :: ${arrobj[i].id}
+			fname ${arrobj[i].fname}
+			Country :: ${arrobj[i].country.cname}
+			month :: ${arrobj[i].month.join(" ")}
+		`)
+		
+		for(let j=0;j<arrobj[i].result.length;j++){
+			console.log(arrobj[i].result[j].subj
+					arrobj[i].result[j].marks
+			)
+		}
+		
+		arrobj[i].result.forEach((myvalue)=>{
+				console.log(myvalue.subj
+						myvalue.marks
+				)
+		})
+		
+	}
+
+Today Lecture
+1 Additional Features
+2 class,object,property
+3 method
+4 Constructor
+5 Access modifier
+6 Access in same Package/folder
+7 Access in different Package
+
+
+
+
+
+
