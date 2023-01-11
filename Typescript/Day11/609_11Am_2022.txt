@@ -1,0 +1,72 @@
+Last Lecture
+1 Additional Features
+	
+2 class,object,property
+	export class Myclass{
+		public id:number;
+		private fname:string;
+		protected lname:string;
+		
+		
+		constructor(id:number,f:string,l:string){
+		
+			this.id=id;
+			this.fname=f;
+			...
+		
+		}
+		
+		display(){
+			console.log(`
+				id :: ${this.id}
+				fname ${this.fname}
+			`)
+		}
+	}
+	
+	let obj=new Myclass(9,'sumit','');
+	obj.display();
+	
+	export function add(a:number,b:number):number{
+		return (a+b);
+	}
+	
+	export const pi=3.14;
+	
+	demo2.ts
+	import {Myclass,add,pi} from './demo1';
+	
+	let obj=new Myclass(8,'','');
+	obj.display();
+	
+	console.log(add(2,3));
+	....
+	
+	myfolder
+		demo3.ts
+		
+		import {Myclass} from '../day10/demo1';
+		let obj=new Myclass(3,'','');
+		obj.display();
+		
+	
+	
+3 method
+4 Constructor
+5 Access modifier
+6 Access in same Package/folder
+7 Access in different Package
+
+Today Lecture
+1 inheritance
+2 Method Override
+3 interface
+4 composition/has relation/aggregation/contemtment
+
+
+
+
+
+
+
+
