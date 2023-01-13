@@ -1,0 +1,116 @@
+Last Lecture
+1 inheritance
+	single,multilevel & hireachical
+	export class Shape{
+		myArea(){
+		...
+		}
+	}
+	
+	export class Circle extends Shape{
+		radius:number;
+		area:number;
+		
+		constructor(r:number){
+			super();
+			this.radius=r;
+			this.area=0;
+		}
+		
+		override myArea(){
+			this.area=3.14*this.radius*this.radius;
+		}
+		
+		display(){
+			console.log(`
+				Radius ${this.radius}
+				Area ${this.area}
+			`)
+		}
+	}
+	
+	export class Rectange extend Shape{
+	....
+	}
+	
+	inheritancemaints
+	
+		let obj=new Circle(2);
+		obj.myArea();
+		obj.display();
+		
+		....
+	
+	
+2 Method Override
+3 interface
+		
+	interface Employee{
+		lname:string;
+		fname:string;
+		fullname?:string;
+		
+		display();
+		
+	}
+	
+	export class EmployeDetails implements Employee{
+			lname:string;
+			fname:string;
+			sal:number;
+			dept:Department;
+			
+			constructor(f:string,l:string,sal:number,role:string){
+				this.lname=l;
+				this.fname=f;
+				this.sal=s;
+				this.dept=new Department(role);
+			}
+			
+			display(){
+				console.log(`
+					First Name :: ${this.fname}
+					Last Name  :: ${this.lname}
+					Salary	   :: ${this.sal}
+					Department :: ${this.dept.getRole()}
+					
+				`)
+			}
+	}
+	
+	export class Department{
+		private role:string;
+		
+		
+		constructor(r:string){
+			this.role=r;
+		}
+		
+		getRole(){
+			this.role;
+		}
+		
+		setRole(r:string){
+			this.role=r;
+		}
+	}
+	
+	main.ts
+	
+	let obj=new EmployeDetails('sumit,'Raokhande',100,'DevOps');
+	obj.display();
+	
+	
+4 composition/has relation/aggregation/contemtment
+
+Today Lecture
+1 Angular setup
+
+
+
+
+
+
+
+
+
