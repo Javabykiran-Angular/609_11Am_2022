@@ -1,0 +1,75 @@
+Last Lecture
+1 Angular setup
+
+Today Lecture
+1 Angular Arch.Overview	
+	- It is component orientated arch.
+	- component 
+		- it has 3 file
+		1 view file => .html => only 1 view 
+		2 stylesheet => .css => multiple file is there 
+		3 component file => .ts => only 1 ts file 
+		4 testing => spec.ts 
+		- metadata
+			- it gives extra information about component 
+			@Component({
+				selector:,
+				templateUrl:
+				StyleUrls:
+			})
+			
+	- data binding 
+		- data flows from componet file to view file 
+		1 String interpolation
+		2 property binding
+		3 style binding
+		4 class binding
+	- Event Binding
+		- data flows from view file to component
+			click,change,keyboard,mouse event
+	- Directive 
+		to change a behaviour of ur view dymanically 
+			1 attribute
+				ngStyle,ngClass,ngModel...
+			2 component
+				<ng-template><router-outlet>
+			3 structure
+				*ngIf,*ngFor,*ngSwitch
+			4 event 
+				ngSubmit,...
+	- App module block
+		- app.module.ts file 
+			- only one root module 
+			- feature/custom module 
+		1 declaration
+			- to register the ur custom component
+			- to craete a factory class of that component
+		2 import
+			- to import a module(it is collection of classes,interface,method,variable,component,services,...)
+		
+		3 services
+			- It is simple class 
+			- u can write ur business logic
+			- use DI 
+				
+			- providers: to register ur services
+		4 routing
+			- navigation from one component to another component
+			
+	- Injector
+		- use 3rd party services 
+		- angular has its own services 
+		
+	
+2 Angular Application Flow
+3 Component creation manually 
+
+
+
+
+
+
+
+
+
+
