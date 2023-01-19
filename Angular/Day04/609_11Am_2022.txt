@@ -1,0 +1,58 @@
+Last Lecture
+1 Component creation through cli (command line )
+	ng g c student
+	
+	employee.html
+	<app-student></app-student>
+2 Data binding
+	- data flow from component file to view file 
+	
+3 string interpolation 
+	{{propertyname}}
+	
+	.html 
+	<h2> {{name}} </h2>
+	<h2> {{"Welcome "+name}} </h2>
+	<h2> {{num+num}} </h2>
+	<img src=" {{imgUrl}} ">
+	
+	.css 
+	img{
+		width:250px;
+		height:250px;
+	}
+	
+	.ts file
+	name:string="sumit";
+	num:number=2;
+	imgUrl:string='../../assets/bg2.jpg'
+3 property Binding
+	
+	<input [value]="name">
+	<img [src]="imgUrl" id="myimg" class="myclass"
+	
+	.css 
+	#myimg{
+	....
+	}
+	.myclass{
+		...
+	}
+	
+	.ts
+	name:string='sumit';
+	imgUrl:string='../../assets/bg2.jpg'
+
+Today Lecture
+1 Diff between string interpolation vs property binding
+2 style binding
+3 class binding
+
+
+
+
+
+
+
+
+

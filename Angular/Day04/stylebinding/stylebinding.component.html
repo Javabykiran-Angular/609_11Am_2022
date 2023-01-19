@@ -1,0 +1,25 @@
+<p>stylebinding works!</p>
+
+<!-- if u want apply style dynamically to any element then u go for style binding
+    [style.csspropertyname]="Propertyname"
+    - u can apply any html tag
+-->
+
+<h2 [style.color]="mycolor" >Apply style binding</h2>
+
+<h2 [style.color]="rating<5?'red':'green'">Apply style binding on condition</h2>
+
+<!-- ngStyle 
+    - attribute directive
+    - if u want apply multiple css property to any html element
+    - to apply ngStyle use to set/bind a json object 
+    - u can apply any html tag
+-->
+
+    <div [ngStyle]="myjson">
+        Apply ngStyle attribute directive
+    </div>
+
+    
+
+
