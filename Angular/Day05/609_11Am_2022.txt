@@ -1,0 +1,65 @@
+Last Lecture
+1 Diff between string interpolation vs property binding
+	<div hidden="{{isHidden}}">....
+	</div>
+	
+	<div [hidden]="isHidden">....
+	</div>
+	
+	.ts file
+	
+	isHidden:boolean=false;
+2 style binding
+	
+	<h2 [style.color]="mycolor"> .....
+	<h2 [style.color]="rating<5?'red':'green'">
+	
+	<div [ngStyle]="myjson">....
+	
+	.ts file
+	mycolor:string='red';
+	rating:number=2;
+	
+	myjson={
+		color:'red',
+		fontSize:"32px",
+		'font-family':''
+	}
+	
+3 class binding
+	success,danger,warning,special
+	
+	<h2 [class]="myclass">...
+	<h2 [class.danger]="rating<5"
+		[class.warning]="rating>5"
+	>
+	
+	<div [ngClass]="myjson">
+	
+		.ts file
+		myclass:string='success';
+		rating:number=21;
+		isError:boolean=true;
+		isSpecial:boolean=true;
+		
+		myjson={
+			'success':!this.isError,
+			'danger' : this.isError,
+			'special': this.isSpecial
+		}
+	
+Today Lecture
+1 Event Binding
+	- data/request flow from view file to component file
+2 click event
+3 $event 
+
+
+
+
+
+
+
+
+
+
