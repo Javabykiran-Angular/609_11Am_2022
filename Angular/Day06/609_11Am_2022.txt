@@ -1,0 +1,49 @@
+Last Lecture
+1 Event Binding
+	- data/request flow from view file to component file
+	
+2 click event
+	<button (click)="onClick()">
+	<img (click)="onImage()"
+	
+	.ts file
+		count:number=0;
+	onClick(){
+		if(this.count==0){
+		console.log("...")
+		this.count++;
+		}
+		
+	}
+	
+	onImage(){
+	....
+	}
+3 $event
+	- it is special variable given by angular
+	- it gives current dom elemenet information
+	- u can only access the value but u can't change or manipulate that value 
+	
+	<button value="Doller event" (click)="onClick($event)">
+	
+	.ts file
+	onClick(myevent:any){
+		console.log(myevent)
+		console.log(myevent.target.value)
+	}
+	
+
+Today Lecture
+1 Template ref variable
+2 Simple real example
+3 change event 
+
+
+
+
+
+
+
+
+
+
