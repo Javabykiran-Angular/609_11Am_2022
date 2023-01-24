@@ -1,0 +1,75 @@
+Last Lecture
+1 Template ref variable
+	<input #inputname placeholder="Enter the name ">
+	<button (click)="onclick(inputname)">
+	
+	
+	<input #inputname1 placeholder="Enter the name ">
+	<button (click)="onclick1(inputname1.value)">
+	
+	
+	.ts file
+	
+	onclick(myinput:any){
+		console.log(myinput);
+		console.log(myinput.value);
+		myinput.style.background='green';
+		myinput.style.color='white';
+	}
+	
+	onclick1(myvalue:any){
+		console.log(myvalue)
+	}
+	
+2 Simple real example
+
+	<label> number1
+	<input #num1>
+	<label> number2
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)"
+	<input [value]="result">
+	,ts file
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		let n2=+num2;
+//		this.result=num1+num2;
+		this.result=n1+n2;
+	}
+3 change event
+	<input #inputname (change)="onChange(inputname)">
+	.ts file
+	onChange(myname:any){
+	....
+	
+		....
+	
+	}
+
+Today Lecture
+1 key board event
+	1 keyup
+	2 keydown
+2 event binding without event handler
+	- if ur one line logic is there then u go for
+	- for that u have to create one property to store a data 
+3 two way binding
+	
+4 structural directive 
+	- it modify dynamically ur dom structure 
+	1 *ngIf => to check condition dynamically
+	2 *ngFor => to iterate dynamically
+	3 *ngSwitch => to perform a specific condition
+5 component directive
+	<ng-template>
+	
+
+
+
+
+
+
+
+
+
+

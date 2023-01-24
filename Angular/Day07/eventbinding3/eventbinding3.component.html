@@ -1,0 +1,24 @@
+<p>eventbinding3 works!</p>
+
+<!-- <input type="text" (keyup)="onKeyUp()" placeholder="Key up event"> <br><br>
+
+<input type="text" (keydown)="onKeyDown()" placeholder="Key down event"> <br><br> -->
+
+<!-- <button (click)="result=8+8" >Addition</button>
+<h2> {{result}} </h2> -->
+
+
+<!-- two way binding
+    ngModel
+        - attribute directive 
+        - FormsModule import 
+        - [()] => bananna in the box 
+        - [(ngModel)]="Propertyname"
+        - u can use any html tag 
+-->
+
+<input type="text" placeholder="Enter the name" [(ngModel)]="name" >
+
+<h2> {{name}} </h2>
+
+
