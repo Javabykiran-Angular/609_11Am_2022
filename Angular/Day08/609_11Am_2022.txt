@@ -1,0 +1,75 @@
+Last Lecture
+1 key board event
+	1 keyup
+		<input (keyup)="onKeyUp()">
+		
+		.ts file
+		onKeyUp(){
+			console.log("...")
+		}
+	2 keydown
+		<input (keydown)="onKeyDown()">
+		.ts file
+		onKeyDown(){
+		..
+		}
+2 event binding without event handler
+	- if ur one line logic is there then u go for
+	- for that u have to create one property to store a data 
+	
+	<button (click)="result=8+8">
+	<h2> {{result}}
+	
+3 two way binding
+	- ngModel
+	- [()]
+	<input [(ngModel)]="name">
+		<h2> {{name}}
+		
+		.ts file
+		name:string='';
+		
+	app.module.ts
+		import : [
+			FormsModule
+		]
+	
+	
+4 structural directive 
+	- it modify dynamically ur dom structure 
+	1 *ngIf => to check condition dynamically
+	2 *ngFor => to iterate dynamically
+	3 *ngSwitch => to perform a specific condition
+	
+	<div *ngIf="rating<4;else myelse">
+		<h2> Condition is true 
+	</div>
+	
+	
+	<ng-template #myelse>
+		<h2> Condition is false 
+	</ng-template>
+	
+	.ts file
+	rating:number=21;
+	
+5 component directive
+	<ng-template>
+
+Today Lecture
+1 *ngFor 
+2 Mouse event 
+	1 mouseover
+	2 moutout
+
+	
+
+
+
+
+
+
+
+
+
+

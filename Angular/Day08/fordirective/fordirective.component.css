@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+}
+
+table,th,td{
+    border: 2px solid;
+}
+
+.highlight{
+    background-color: green;
+    color: white;
+}
