@@ -1,0 +1,73 @@
+Last Lecture
+1 *ngFor 
+	<ul> 
+		<li *ngFor="let item of course">
+			{{item}}
+			</li>
+	</ul>
+	
+	<table> 
+		<thead>
+			<th>...
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of product;index as i"
+				(mouseover)="onMouseOver(item)"
+				(mouseout)="onMouseout()"
+				[ngClass]="{
+					'highlight':selected===item.name
+				}"
+			>
+				<td>{{i+1}}</td>
+				<td>{{item.name}}</td>
+				<td>{{item.price}}</td>
+				<td>{{item.qty}}</td>
+			</tr>
+		</tbody>
+	</table>
+				
+	
+		
+	.ts file
+	
+	onMouseout(){
+		this.selected='';
+	}
+	
+	onMouseOver(item:any){
+		this.selected=item.name;
+	}
+	
+	course:string[]=[...];
+	product=[
+	{
+		....
+	},
+	{
+		....
+	},
+	]
+	
+2 Mouse event 
+	1 mouseover
+	2 moutout
+	
+Today Lecture
+1 ngSwitch directive
+2 component interaction
+	- we send data(string,number,boolean,any,json object,array of object,array,custom class object) from one component to another component
+	- pre-requiest
+		parent - child relationship is mandatory 
+	- @input()=> to send data from parent to child 
+	- @Output()=> to send data from child to parent
+	
+
+
+
+
+
+
+
+
+
+
