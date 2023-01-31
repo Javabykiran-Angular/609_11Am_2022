@@ -1,0 +1,33 @@
+<p>parent works!</p>
+<!-- <input #msg type="text" placeholder="Enter the message"><br><br>
+<button (click)="onSendMsg(msg.value)">Send Message</button> -->
+
+<h2> {{ChildStrData}} </h2>
+
+<table border="1px">
+    <thead>
+        <th>Sr no</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of ChildArrData;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<hr>
+<!-- <app-child1 [parentStrData]="strdata"
+    [parentJsonData]="jsonObj"
+    [ParentStrMessage]="myMsg"
+></app-child1> -->
+
+<app-child2 (childStrEvent)="ChildStrData=$event" 
+            (childArrObjEvent)="ChildArrData=$event"
+></app-child2>
