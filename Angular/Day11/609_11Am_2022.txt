@@ -1,0 +1,90 @@
+Last Lecture
+1 @Input()
+	to send data from parent to child 
+	
+	parent.html
+	<input #msg>
+	<button (click)="onSend(msg.value)">
+	
+	
+	<app-child1 [ParentStrData]="strData" 
+				[ParentJsonData]="jsonobj"
+				[ParentMessager]="mymsg"
+	>
+	
+	parent.ts
+	strData:string='...';
+	jsonobj={
+	...
+	}
+	
+	onSend(msg:string){
+		this.mymsg=msg;
+	}
+	
+	child1.ts
+	@Input() ParentStrData:string='';
+	@Input() ParentJsonData:any={};
+	
+	@Input() ParentMessager:string=''
+	
+	child1.html
+	{{ParentStrData}}
+	{{ParentJsonData.id}}
+	....
+	
+	{{ParentMessager}}
+	
+	
+	HW
+	send array of object from parent to child 
+	
+2 @Output()
+	to send data from child to parent
+	
+	child2.html
+	<button (click)="onClick()">
+	
+	child2.ts
+	
+	@Output() ChildStrEvent=new EventEmitter();
+	@Output() ChildArrObjEvent=new EventEmitter();
+	strData:string='.....'
+	
+	arrproduct=[{},{}]
+	
+	onClick(){
+		this.ChildStrEvent.emit(this.strData);
+		this.ChildArrObjEvent.emit(this.arrproduct);
+		
+	}
+	
+	parent.ts
+	childstrdata:string=''
+	
+	parent.html
+	
+	{{childstrdata}}
+	
+	table => Display
+	childarrdta
+	
+	<app-child2 (ChildStrEvent)="childstrdata=$event"
+				(ChildArrObjEvent)="childarrdta=$event"
+			>
+	
+	HW
+	Send json object from child to parent 
+Today Lecture
+1 Pipe
+	- it transform ur data to render it on browser but without changing its original value 
+2 Inbuild Pipe 
+
+
+
+
+
+
+
+
+
