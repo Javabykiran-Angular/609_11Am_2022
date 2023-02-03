@@ -1,0 +1,47 @@
+Last Lecture
+1 Custom Pipe 
+	summary.pipe.ts
+	
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implements PipeTransform{
+		transform(value:any,start:number=0,end:number=20){
+			let temp=(<string>value);
+			
+			return (temp.subString(start,end)+"...");
+		}
+	}
+	app.module.ts
+	declaration:[
+		SummaryPipe
+	]
+	
+	customPipe.html
+	
+		<h2> {{strDetails|summary}}</h2> 
+		<h2> {{strDetails|summary:0:30}}</h2> 
+	
+2 PipeTransform => interface 
+3 transform => method implement
+ng g p summary1
+
+Today Lecture
+1 Services
+	- It is simple class 
+	- It is used to write a business logic 
+	- it is used for code resulabilty
+	- it is used for code maintability
+	- it is used to connect ur back end server to front server 
+	
+2 Dependancy Injection
+	
+
+
+
+
+
+
+
+
+
