@@ -1,0 +1,64 @@
+Last Lecture
+1 Services
+	- It is simple class 
+	- It is used to write a business logic 
+	- it is used for code resulabilty
+	- it is used for code maintability
+	- it is used to connect ur back end server to front server 
+	
+	export class CourseService{
+		private course:sting[]=[''];
+		
+		getCourese(){
+			return this.course;
+		}
+		
+	}
+	
+	course.componet.ts
+	mycourse:string[]=[];
+	constructor(private service:CourseService){
+		//let serveice=new CourseService();
+		//this.mycourse=serveice.getCourese();
+	}
+	
+	ngOnInit(){
+			this.mycourse=this.serveice.getCourese();
+	}
+	
+	
+	
+	app.module.ts
+	providers:[CourseService]
+	
+	
+2 Dependancy Injection
+
+Today Lecture
+1 Http Method
+	1 get => to get record from back end server to front end server 
+	2 post => to send data to back end server from front end server 
+	3 put  => to update data to back end server from front end server
+	4 delete => to delete a record  
+	
+2 https://jsonplaceholder.typicode.com/posts
+	- it is fake url 
+	- when u send any data to add/update/delete the changes is not reflected in ur database but it gives a proper response of ur request  
+	
+
+3 HttpClientModule
+
+4 @Injectable()
+5 Obervable
+6 Get method
+7 post method
+	
+
+
+
+
+
+
+
+
+
