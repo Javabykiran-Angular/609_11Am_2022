@@ -1,0 +1,89 @@
+Last Lecture
+1 Http Method
+	1 get => to get record from back end server to front end server 
+	2 post => to send data to back end server from front end server 
+	3 put  => to update data to back end server from front end server
+	4 delete => to delete a record  
+	
+2 https://jsonplaceholder.typicode.com/posts
+	- it is fake url 
+	- when u send any data to add/update/delete the changes is not reflected in ur database but it gives a proper response of ur request  
+	
+
+3 HttpClientModule
+app.module.ts
+import
+@angular/common/http
+
+ng g s http 
+
+
+4 @Injectable({
+	provideIn:"root"
+})
+export class httpService{
+	url:string='...';
+	constructor(private http:HttpClient){}
+	
+	getPost(){
+		return (this.http.get(this.url));
+	}
+	
+	Postdata(obj:any){
+		return (this.http.post(this.url,obj));
+	}
+	
+}
+
+post.ts
+	
+	post:any[]=[];
+	constructor(private service:httpService){}
+	
+	ngOnInit(){
+		this.GetPost();
+	}
+	GetPost(){
+		this.service.getPost()
+		.subscribe((response:any)=>{
+			this.post=response;
+		})
+	}
+	
+	onSend(mytitle:any,mybody:any){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		
+		this.service.Postdata(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	post.html
+	<label >Title::
+	<input #inputtitle>
+	<label >Body::
+	<input #inputbody>
+	<button (click)="onSend(inputtitle.value,inputbody.value)">Send
+	
+5 Obervable
+6 Get method
+7 post method
+
+Today Lecture
+1 Put method
+2 Delete
+3 error handling
+	
+
+
+
+
+
+
+
+
+
