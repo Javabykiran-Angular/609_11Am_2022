@@ -1,0 +1,73 @@
+Last Lecture
+1 Put method
+	post.ts
+	
+	onEdit(item:any){
+		this.id=item.id;
+		...
+		this.ishidden=false;
+	}
+	
+	onupdate(){
+		let obj={
+			id:this.id;
+			title:this.title
+			..
+		}
+		this.service.UpdateData(obj)
+		.subscribe((response)=>{
+		...
+		this.ishidden=true;
+		})
+	}
+	
+	onDelete(id:any){
+		this.service.deletedata(id)
+		.subscribe((response)=>{
+			...
+		},(myerror)=>{
+			alert("....")
+		})
+	}
+	
+	post.html
+	<div [hidden]="ishidden">
+		label...
+		<input [(ngModel)]="id" readonly>
+		....
+		...
+		<button (click)="onupdate()">update
+	
+	
+	service.ts
+	UpdateData(obj:any){
+		return this.http.put(`${this.url}/${obj.id}`,obj);
+	}
+	
+	deletedata(id:any){
+		return this.http.delete(`${this.url}/${id}`);
+	}
+2 Delete
+3 error handling
+
+Today Lecture
+1 Routing
+	- navigation from one component to another component
+	
+2 Routing steps
+	1 configure route 
+	2 <router-outlet> => component directive 
+	3 establish the link/navigate between component
+3 Empty path => default component 
+4 wild cart operator => u can show not found component 
+5 Send parameter
+	
+
+
+
+
+
+
+
+
+
