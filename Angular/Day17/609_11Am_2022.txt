@@ -1,0 +1,76 @@
+Last Lecture
+1 Routing
+	- navigation from one component to another component
+	
+2 Routing steps
+	1 configure route 
+		app-routing.ts
+		
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"Page2/:id/:username",component:Page2Component
+			},
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+		
+	2 <router-outlet> => component directive 
+		app.component.html
+	3 establish the link/navigate between component
+	home.html
+	<a routerLink="/Page1">Page1
+	<a [routerLink]="['/Page2',myid,myusername]">Page2
+	home.ts
+	myid:number=9;
+	myusername:string='....'
+	
+	pag2.ts
+	constructor(private route:ActivatedRoute){}
+	
+	ngOnInit(){
+		this.GetDataFromUrl()
+	}
+	
+	GetDataFromUrl(){
+		this.route.ParamMap
+		.subscribe((param:any)=>{}
+			this.myid=+param.get("id")
+			this.myusername=param.get("username");
+			
+		)
+	}
+	
+	
+	
+3 Empty path => default component 
+4 wild cart operator => u can show not found component 
+5 Send parameter
+
+Today Lecture
+1 Query Parameter
+	localhost:4200/queryparameter?id=9&fname=sumit
+2 Dynamic Routing => For ur understanding Purpose
+	
+3 features Module/Custom Module 
+4 Custom Routing file
+5 Lazy Loading
+
+
+
+	
+
+
+
+
+
+
+
+
+
