@@ -1,0 +1,87 @@
+Last Lecture
+1 Query Parameter
+	localhost:4200/queryparameter?id=9&fname=sumit
+	
+	<a routerLink="/.." [queryParams]="json">
+	
+	.ts file
+	json={
+	...
+	}
+	
+	queryParams.ts
+	constructor(private route:ActivatatedRoute)
+	
+	GetDataFromUrl(){
+		this.route.queryParamMap
+		.subscribe((param)=>{
+			....
+		})
+	}
+	
+2 Dynamic Routing => For ur understanding Purpose
+
+	constructor(private router:Router)
+	onPage2(){
+		this.router.nvaigate(['/Page2',this.myid,this.myusername]);
+	}
+	
+	onQueryParameter(){
+		this.router.nvaigate(['/queryParams'],{
+			queryParams:this.myjson
+		});
+	}
+	
+	
+3 features Module/Custom Module 
+4 Custom Routing file
+5 Lazy Loading
+
+	ng g m user --routing
+	
+	listuser,updateuser
+user-routing 
+	[
+		{
+			path:"",component:listuser
+		},
+		{
+			path:"update",component:updateuser
+		},
+		...
+	]
+	
+	app-routing.ts
+	{
+		path:"user",loadChildern:()=>import('./user/user.module').then(m=>m.userModule)
+	}
+	
+	home.ts
+	<a routerLink="/user">
+	
+	listuser.ts
+	<a routerLink="update"> ...
+
+Today Lecture
+1 Overview Of Bootstrap
+	- Css Freamwork
+	- Application Makes Attractive
+	- We used for page responsive
+2 Basic Grid System
+3 Integration of Bootstrap
+	1 Online 
+		u have a mentioned a CDN Link 
+	2 offline
+
+
+
+	
+
+
+
+
+
+
+
+
+
